@@ -331,5 +331,17 @@ Nice! Our "subtraction" gave us the right answer. That means our Twos' Complimen
 | led[13] | Twos' Compliment bit 7 | OUT       |
 
 **HINT**: Use the `full_adder.v` from week 4.
+**QUESTION**: What is the one big issue with the Twos Compliment number representation? Take a look at the range of numbers (e.g. 7 -> 0 -> -8) for inspiration. Try some various limits on your switches and see what the LEDs show and if that is correct!
 
 These are the same eight switches we use for the Ones Compliment adder above, but that's fine -- they can go to the inputs of more than one module.
+
+# Wrapping it all up
+
+Hopefully, by this point, you can see how effective Twos Compliment is. It allows us to use totally regular unsigned integer adders to do both addition and subtraction. Also, it does not force us to do the complicated end-around carry/borrow that Ones Compliment does. This means minimal additional circuitry imposed upon our computers, and things can now run faster than if implemented in Ones Compliment. However, as you can also see, there is not really anything overtly complicated within these concepts. Most of what we've seen in this lab is combining our already-written `full_adder` from previous labs. Twos Compliment, while initially seeming to be a complicated concept, is simple when we look at it from a practical point of view.
+
+## Lab Deliverables
+- `half_sub.v`
+- `ones_compliment.v`
+- `twos_compliment.v`
+- `top.v` with everything hooked up
+- Answers to the questions for each section.
