@@ -1,5 +1,5 @@
 module onescompliment(
-    input A0, A1, A2, A3, B0, B1, B2, B3, 
+    input A0, A1, A2, A3, B0, B1, B2, B3,
    
     output Ones0, Ones1, Ones2, Ones3
 );
@@ -17,7 +17,7 @@ fulladder adder0(
     .A(A0),
     .B(B0),
     .Cin(0),
-    .Y(Ones0),
+    .Y(Ones[0]),
     .Carry(borrow0)
 );
 
