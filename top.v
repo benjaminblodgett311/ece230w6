@@ -22,7 +22,7 @@ module top (
         .Ones0(led[2]),
         .Ones1(led[3]),
         .Ones2(led[4]),
-        .Ones3(led[5]),
+        .Ones3(led[5])
 	);
 
      twoscompliment twos(
@@ -41,7 +41,7 @@ module top (
         .Twos4(led[10]),
         .Twos5(led[11]),
         .Twos6(led[12]),
-        .Twos7(led[13]),
+        .Twos7(led[13])
 	);
     
 
