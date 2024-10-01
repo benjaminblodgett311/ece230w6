@@ -1,48 +1,73 @@
 module twoscompliment(
     input [9:2] A,
    
-    output [13:6]Twos
+    output [13:6] Twos
 );
 
-wire around;
-
-fulladder adderCar0(
-    .A(Ones0),
+wire around; 
+fulladder Twos0(
+    .A(A[0]),
     .B(0),
-    .Cin(borrow3),
-    .Y(Ones0),
-    .Carry(borrow4)
+    .Cin(0),
+    .Y(Twos[0]),
+    .Carry(around)
 );
 
-fulladder adderCarryOnes1(
-    .A(Ones1),
+fulladder TwosOne(
+    .A(A[1]),
     .B(0),
-    .Cin(borrow4),
-    .Y(Ones1),
-    .Carry(borrow5)
+    .Cin(around),
+    .Y(Twos[1]),
+    .Carry(around)
 );
 
-fulladder adderCarryOnes2(
-    .A(Ones2),
+fulladder Twos2(
+    .A(A[2]),
     .B(0),
-    .Cin(borrow5),
-    .Y(Ones2),
-    .Carry(borrow6)
+    .Cin(around),
+    .Y(Twos[2]),
+    .Carry(around)
 );
 
-fulladder adderCarryOnes3(
-    .A(Ones3),
+fulladder Twos3(
+    .A(A[3]),
     .B(0),
-    .Cin(borrow6),
-    .Y(Ones3),
-    .Carry(borrow7)
+    .Cin(around),
+    .Y(Twos[3]),
+    .Carry(around)
 );
 
+fulladder Twos4(
+    .A(A[4]),
+    .B(0),
+    .Cin(around),
+    .Y(Twos[4]),
+    .Carry(around)
+);
 
+fulladder Twos5(
+    .A(A[5]),
+    .B(0),
+    .Cin(around),
+    .Y(Twos[5]),
+    .Carry(around)
+);
 
+fulladder Twos6(
+    .A(A[6]),
+    .B(0),
+    .Cin(around),
+    .Y(Twos[6]),
+    .Carry(around)
+);
 
-
-
+fulladder Twos7(
+    .A(A[7]),
+    .B(0),
+    .Cin(around),
+    .Y(Twos[7]),
+    .Carry(around)
+);
 
 
 

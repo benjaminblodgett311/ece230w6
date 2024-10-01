@@ -13,13 +13,13 @@ module top (
     onescompliment ones(
         .A(sw[5:2]),
         .B(sw[6:9]),
-        .Ones(led[5:2])
+        .Y(led[5:2])
     
 	);
     
      twoscompliment twos(
         .A(sw[9:2]),
-        .Twos(led[13:6]),
+        .Y(led[13:6])
 	);
     
 
