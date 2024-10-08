@@ -10,11 +10,10 @@ module top (
         .Borrow(led[1])
 	);
 
-    onescompliment ones(
+    onescompliment onescomp(
         .A(sw[5:2]),
-        .B(sw[6:9]),
-        .Y(led[5:2])
-    
+        .B(sw[9:6]),
+        .Ones(led[5:2]) 
 	);
     
      twoscompliment twos(
