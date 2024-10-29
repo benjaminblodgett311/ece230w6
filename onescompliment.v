@@ -16,7 +16,7 @@ wire borrow3;
 fulladder adder0(
     .A(A[0]),
     .B(B[0]),
-    .Cin(0),
+    .Cin(1'b0),
     .Y(Ones[0]),
     .Carry(borrow0)
 );
@@ -45,3 +45,4 @@ fulladder adder3(
     .Carry(borrow3)
 );
 
+endmodule

@@ -18,7 +18,7 @@ module top (
     
      twoscompliment twos(
         .A(sw[9:2]),
-        .Y(led[13:6])
+        .Twos(led[13:6])
 	);
     
 
